@@ -9,32 +9,32 @@ const Trusted = () => {
           {/* my 1st img  */}
           <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image2.png"
+              src=""
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <img
+              src="https://www.freepnglogos.com/uploads/adidas-logo-photo-png-3.png"
               alt="trusted-brands"
             />
           </div>
           <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image3.png"
+              src="https://pngimg.com/uploads/nike/nike_PNG18.png"
               alt="trusted-brands"
             />
           </div>
           <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image4.png"
+              src="https://o.remove.bg/downloads/49f2d0bc-52e4-43b3-9431-ec870badf053/samsung-logo-png-1299-removebg-preview.png"
               alt="trusted-brands"
             />
           </div>
           <div className="slide">
             <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image6.png"
-              alt="trusted-brands"
-            />
-          </div>
-          <div className="slide">
-            <img
-              src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image8.png"
-              alt="trusted-brands"
+              src=""
+              alt=""
             />
           </div>
         </div>

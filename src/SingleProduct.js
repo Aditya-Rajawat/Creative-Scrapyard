@@ -11,9 +11,7 @@ import { TbTruckDelivery, TbReplace } from "react-icons/tb";
 import Star from "./components/Star";
 import AddToCart from "./components/AddToCart";
 
-const API = "https://api.pujakaitem.com/api/products";
-// const API = "https://shorturl.at/bMW39";
-// const API = "http://127.0.0.1:5500/src/New.html";
+const API = "http://127.0.0.1:8000/api/";
 
 const SingleProduct = () => {
   const { getSingleProduct, isSingleLoading, singleProduct } =
@@ -79,7 +77,7 @@ const SingleProduct = () => {
 
               <div className="product-warranty-data">
                 <TbTruckDelivery className="warranty-icon" />
-                <p>Thapa Delivered </p>
+                <p>Order Delivered </p>
               </div>
 
               <div className="product-warranty-data">

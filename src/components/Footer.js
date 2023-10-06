@@ -15,9 +15,9 @@ const Footer = () => {
               <h3>Talk to us today</h3>
             </div>
 
-            <div>
+            <div className="start">
               <Button className="btn hireme-btn">
-                <NavLink to="/"> Get Started </NavLink>
+                <NavLink to="/" className="get"> Get Started </NavLink>
               </Button>
             </div>
           </div>
@@ -27,15 +27,15 @@ const Footer = () => {
         <footer>
           <div className="container grid grid-four-column">
             <div className="footer-about">
-              <h3>Thapa Technical</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+              <h3 className="query">For more queries</h3>
+              {/* <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p> */}
             </div>
             <div className="footer-subscribe">
               <h3>Subscribe to get important updates</h3>
               <form action="#">
                 <input type="email" name="email" placeholder="YOUR E-MAIL" />
 
-                <input type="submit" value="subscribe" />
+                <input type="submit" value="subscribe" className="subscribe"/>
               </form>
             </div>
             <div className="footer-social">
@@ -49,9 +49,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <a
-                    href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                    target="_blank"
-                    rel="noreferrer">
+                    href="#">
                     <FaYoutube className="icons" />
                   </a>
                 </div>
@@ -59,7 +57,7 @@ const Footer = () => {
             </div>
             <div className="footer-contact">
               <h3>Call Us</h3>
-              <h3>+91 12345678978</h3>
+              <h3>+91-12345678978</h3>
             </div>
           </div>
 
@@ -67,11 +65,11 @@ const Footer = () => {
             <hr />
             <div className="container grid grid-two-column ">
               <p>
-                @{new Date().getFullYear()} ThapaTechnical. All Rights Reserved
+                @{new Date().getFullYear()} Techno-Artistic Scrapyard. All Rights Reserved
               </p>
               <div>
-                <p>PRIVACY POLICY</p>
-                <p>TERMS & CONDITIONS</p>
+                <p>Privacy Policy | Terms & Conditions</p>
+                {/* <p></p> */}
               </div>
             </div>
           </div>
@@ -86,6 +84,20 @@ const Wrapper = styled.section`
     margin: 0;
   }
 
+  .btn {
+    background-color: rgba(46, 208, 14);
+    border-radius: 10px;
+  }
+    
+  form {
+    input {
+      border-radius: 10px;
+    }
+    .subscribe {
+      background-color: rgba(46, 208, 14);
+      border-radius: 10px;
+    }
+  }
   .contact-short {
     max-width: 60vw;
     margin: auto;
@@ -101,6 +113,15 @@ const Wrapper = styled.section`
     }
   }
 
+  }
+  .footer-about {
+    .query {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    }
+  }
   footer {
     padding: 14rem 0 9rem 0;
     // background-color: ${({ theme }) => theme.colors.footer_bg};

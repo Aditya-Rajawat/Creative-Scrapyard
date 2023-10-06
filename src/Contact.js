@@ -20,13 +20,7 @@ const Contact = () => {
           input[type="submit"] {
             cursor: pointer;
             transition: all 0.2s;
-
-            &:hover {
-              background-color: ${({ theme }) => theme.colors.white};
-              border: 1px solid ${({ theme }) => theme.colors.btn};
-              color: ${({ theme }) => theme.colors.btn};
-              transform: scale(0.9);
-            }
+            background-color: #2ed00e
           }
         }
       }
@@ -77,7 +71,7 @@ const Contact = () => {
               autoComplete="off"
               placeholder="Enter you message"></textarea>
 
-            <input type="submit" value="send" />
+            <input type="submit" value="send" style={{backgroundColor : "#2ed00e"}} />
           </form>
         </div>
       </div>

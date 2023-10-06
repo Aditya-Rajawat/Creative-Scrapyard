@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
 
@@ -18,7 +18,7 @@ const HeroSection = ({ myData }) => {
               eco-friendly creativity and sustainability.
             </p>
             <NavLink>
-              <Button className="shop">shop now</Button>
+              <Link to="/products"><Button className="shop">shop now</Button></Link>
             </NavLink>
           </div>
           {/* our homepage image  */}

@@ -4,6 +4,7 @@ import FormatPrice from "../Helpers/FormatPrice";
 import { Button } from "../styles/Button";
 
 const ListView = ({ products }) => {
+  console.log(products)
   return (
     <Wrapper className="section">
       <div className="container grid">
@@ -95,14 +96,17 @@ const Wrapper = styled.section`
     .btn {
       margin: 2rem 0;
       background-color: rgb(0 0 0 / 0%);
-      border: 0.1rem solid rgb(98 84 243);
+      border: 0.1rem solid rgb(50, 205, 50);
       display: flex;
       justify-content: center;
       align-items: center;
-      color: rgb(98 84 243);
+      color: rgb(50, 205, 50);
+      border-radius: 10px;
 
       &:hover {
-        background-color: rgb(98 84 243);
+        // background-color: rgb(98 84 243);
+        background-color: #32CD32;
+        border-radius: 10px;
       }
 
       &:hover a {

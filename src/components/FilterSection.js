@@ -178,13 +178,14 @@ const Wrapper = styled.section`
         cursor: pointer;
 
         &:hover {
-          color: ${({ theme }) => theme.colors.btn};
+          color: #4ad80c;
         }
       }
 
       .active {
         border-bottom: 1px solid #000;
-        color: ${({ theme }) => theme.colors.btn};
+        // color: ${({ theme }) => theme.colors.btn};
+        color: #4ad80c;
       }
     }
   }
@@ -193,6 +194,8 @@ const Wrapper = styled.section`
     padding: 0.3rem 1.2rem;
     font-size: 1.6rem;
     color: ${({ theme }) => theme.colors.text};
+    background-color: #f6f8fa;
+    border-radius: 5px;
     text-transform: capitalize;
   }
 
@@ -234,6 +237,7 @@ const Wrapper = styled.section`
 
   .filter_price {
     input {
+      background-color: #5EFF2A;
       margin: 0.5rem 0 1rem 0;
       padding: 0;
       box-shadow: none;
@@ -248,8 +252,9 @@ const Wrapper = styled.section`
   }
 
   .filter-clear .btn {
-    background-color: #ec7063;
-    color: #000;
+    background-color: #32CD32;
+    border-radius: 10px;
+    color: #fff;
   }
 `;
 

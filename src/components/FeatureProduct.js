@@ -19,6 +19,12 @@ const FeatureProduct = () => {
           {featureProducts.map((curlEm) => {
             return <Product key={curlEm.id} {...curlEm} />;
           })}
+          {featureProducts.map((curlEm) => {
+            return <Product key={curlEm.id} {...curlEm} />;
+          })}
+          {featureProducts.map((curlEm) => {
+            return <Product key={curlEm.id} {...curlEm} />;
+          })}
         </div>
       </div>
     </Wrapper>
